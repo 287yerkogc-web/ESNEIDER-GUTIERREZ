@@ -92,4 +92,5 @@ footer{
 }
 footer a{
     color: #f5f5f5;
+    list-style: none;
 }

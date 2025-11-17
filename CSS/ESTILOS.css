@@ -93,3 +93,15 @@ footer{
 footer a{
     color: #f5f5f5;
 }
+article table {
+    background-color: #fdf8fc;
+    border: 1px solid;
+}
+article table th,tr {
+    border: 1px solid;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}

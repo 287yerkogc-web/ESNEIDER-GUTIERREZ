@@ -97,7 +97,7 @@ article table {
     background-color: #fdf8fc;
     border: 1px solid;
 }
-article table th,tr {
+article table th,td {
     border: 1px solid;
 }
 footer a {

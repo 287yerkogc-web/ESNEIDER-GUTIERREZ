@@ -66,7 +66,7 @@ article{
     border-radius: 8px;
     box-shadow: 0 2px 5px #022442;
 }
-article h4 ol li{
+article h5 ol li{
     flex: 2;
     background-color: white;
     padding: 15px;

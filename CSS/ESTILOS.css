@@ -110,13 +110,13 @@ footer a {
     text-decoration: none;
     padding: 8px 12px;
 }
-dl dt {
+article dl dt {
     font-weight: bold;
     margin-top: 10px;
     font-size: 18px;
     color: #003366;
 }
-dl dd {
+article dl dd {
     margin-left: 20px;
     font-size: 15px;
     color: #333;

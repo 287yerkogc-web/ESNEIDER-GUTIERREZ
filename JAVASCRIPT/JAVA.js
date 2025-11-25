@@ -22,22 +22,22 @@ function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
 }
 function msj1(){
-   alert ("Este es el primer mensaje nuevo ✔");
+   alert ("Este es el primer mensaje nuevo ");
 }
 function msj2(){
-   alert ("Hoy estás aprendiendo más JavaScript 💡");
+   alert ("Hoy estás aprendiendo más JavaScript ");
 }
 function msj3(){
-   alert ("Recuerda guardar tus cambios 💾");
+   alert ("Recuerda guardar tus cambios ");
 }
 function msj4(){
-   alert ("La web es totalmente interactiva 🚀");
+   alert ("La web es totalmente interactiva ");
 }
 function msj5(){
-   alert ("Practicar JS te hará más fuerte 💪");
+   alert ("Practicar JS te hará más fuerte ");
 }
 function msj6(){
-   alert ("Gracias por presionar el botón 🙌");
+   alert ("Gracias por presionar el botón ");
 }
 function agrandarcarita(){
     document.getElementById('carita').style.width="250px";
@@ -52,14 +52,14 @@ function girarcarita(){
     alert("imagen girada")
 }
 function blanconegrocarita(){
-    document.getElementById('carita').style.filter="grayscale(100%)";
+    document.getElementById('logo2').style.filter="grayscale(100%)";
     alert("imagen en blanco y negro")
 }
 function colornormalcarita(){
-    let c = document.getElementById('carita');
+    let c = document.getElementById('logo2');
     c.style.filter = "none";
     c.style.transform = "none";
-    c.style.width = "100px";
+    c.style.width = "200px";
     alert("imagen restaurada")
 }
 function nuevotitulo(){

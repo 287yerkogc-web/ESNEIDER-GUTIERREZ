@@ -51,6 +51,10 @@ function girarcarita(){
     document.getElementById('carita').style.transform="rotate(45deg)";
     alert("imagen girada")
 }
+function cambiarfooter(){
+    document.getElementById('footer').style.background='rgba(8, 163, 67, 0.27)'
+    alert('fondo del footer cambiado exitosamente')
+}
 function blanconegrocarita(){
     document.getElementById('logo').style.filter="grayscale(100%)";
     alert("imagen en blanco y negro")

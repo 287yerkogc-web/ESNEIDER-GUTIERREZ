@@ -63,10 +63,10 @@ function colornormalcarita(){
     alert("imagen restaurada")
 }
 function nuevotitulo(){
-    document.queryselector('header h1').textContent = "JavaScript Avanzado aplicado";
+    document.queryselector('title').textContent = "JavaScript Avanzado aplicado";
     alert("titulo cambiado correctamente")
 }
 function nuevosubtitulo(){
-    document.getElementById('subtitulo').textContent = "manipulacion visual interactiva";
+    document.getElementById('header h1').textContent = "manipulacion visual interactiva";
     alert("subtitulo actualizado");
 }

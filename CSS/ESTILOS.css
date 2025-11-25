@@ -122,3 +122,6 @@ article dl dd {
     color: #333;
     margin-bottom: 8px;
 }
+#carita {
+    transition: 0.4s ease;
+}

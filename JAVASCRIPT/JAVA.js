@@ -21,3 +21,52 @@ function cambiarFondo(){
 function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
 }
+function msj1(){
+   alert ("Este es el primer mensaje nuevo ✔");
+}
+function msj2(){
+   alert ("Hoy estás aprendiendo más JavaScript 💡");
+}
+function msj3(){
+   alert ("Recuerda guardar tus cambios 💾");
+}
+function msj4(){
+   alert ("La web es totalmente interactiva 🚀");
+}
+function msj5(){
+   alert ("Practicar JS te hará más fuerte 💪");
+}
+function msj6(){
+   alert ("Gracias por presionar el botón 🙌");
+}
+function agrandarcarita(){
+    document.getElementById('carita').style.width="250px";
+    alert("imagen agrandada")
+}
+function achicarcarita(){
+    document.getElementById('carita').style.width="80px";
+    alert("imagen reducida")
+}
+function girarcarita(){
+    document.getElementById('carita').style.transform="rotate(45deg)";
+    alert("imagen girada")
+}
+function blanconegrocarita(){
+    document.getElementById('carita').style.filter="grayscale(100%)";
+    alert("imagen en blanco y negro")
+}
+function colornormalcarita(){
+    let c = document.getElementById('carita');
+    c.style.filter = "none";
+    c.style.transform = "none";
+    c.style.width = "100px";
+    alert("imagen restaurada")
+}
+function nuevotitulo(){
+    document.queryselector('header h1').textContent = "JavaScript Avanzado aplicado";
+    alert("titulo cambiado correctamente")
+}
+function nuevosubtitulo(){
+    document.getElementById('subtitulo').textContent = "manipulacion visual interactiva";
+    alert("subtitulo actualizado");
+}

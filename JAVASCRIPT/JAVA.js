@@ -52,11 +52,11 @@ function girarcarita(){
     alert("imagen girada")
 }
 function blanconegrocarita(){
-    document.getElementById('logo2').style.filter="grayscale(100%)";
+    document.getElementById('logo2').src="IMAGENES/logo2.jpg".style.filter="grayscale(100%)";
     alert("imagen en blanco y negro")
 }
 function colornormalcarita(){
-    let c = document.getElementById('logo2');
+    let c = document.getElementById('logo2').src="IMAGENES/logo2.jpg";
     c.style.filter = "none";
     c.style.transform = "none";
     c.style.width = "200px";

@@ -22,22 +22,22 @@ function cambiodeTexto(){
     document.getElementById('Subtitulo').textContent="YA LE SE AL JS";
 }
 function msj1(){
-   alert ("Este es el primer mensaje nuevo ");
+   alert ("LA IA APRENDE ANALIZANDO PATRONES DENTRO DE MUCHOS DATOS");
 }
 function msj2(){
-   alert ("Hoy estás aprendiendo más JavaScript ");
+   alert ("UN ALGORITMO RESUELVE PROBLEMAS SIGUIENDO PASOS LOGICOS DEFINIDOS");
 }
 function msj3(){
-   alert ("Recuerda guardar tus cambios ");
+   alert ("LOS MODELOS MEJORAN AJUSTANDO PARAMETROS SEGUN INFORMACION PREVIA");
 }
 function msj4(){
-   alert ("La web es totalmente interactiva ");
+   alert ("EL APRENDIZAJE SUPERVISADO USA EJEMPLOS CORRECTOS PARA ENTRENAR");
 }
 function msj5(){
-   alert ("Practicar JS te hará más fuerte ");
+   alert ("LA COMPLEJIDAD DEFINE CUAN EFICIENTE ES UN ALGORITMO");
 }
 function msj6(){
-   alert ("Gracias por presionar el botón ");
+   alert ("LA IA COMBINA DATOS, LOGICA Y ANALISIS PARA DECIDIR");
 }
 function agrandarcarita(){
     document.getElementById('carita').style.width="250px";
@@ -67,10 +67,10 @@ function colornormalcarita(){
     alert("imagen restaurada")
 }
 function nuevotitulo(){
-    document.querySelector('title').textContent = "JavaScript Avanzado aplicado";
+    document.querySelector('title').textContent = "JAVASCRIPT AVANZADO APLICADO";
     alert("titulo cambiado correctamente")
 }
 function nuevosubtitulo(){
-    document.querySelector("header h1").textContent = "manipulacion visual interactiva";
+    document.querySelector("header h1").textContent = "MANIPULACION VISUAL INTERACTIVA";
     alert("subtitulo actualizado")
 }

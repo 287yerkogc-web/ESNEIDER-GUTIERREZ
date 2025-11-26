@@ -52,7 +52,7 @@ function girarcarita(){
     alert("imagen girada")
 }
 function cambiarfooter(){
-    document.getElementById('footer').style.background='rgba(8, 163, 67, 0.27)'
+    let footer = document.querySelector("footer").style.background='rgba(8, 163, 67, 0.27)'
     alert('fondo del footer cambiado exitosamente')
 }
 function blanconegrocarita(){

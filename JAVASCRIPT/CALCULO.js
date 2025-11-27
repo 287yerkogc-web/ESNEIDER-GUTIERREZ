@@ -23,6 +23,7 @@ function(){
 
     areaTexto.textContent = "EL AREA DEL TERRENO ES DE: "+ resultado.area;
     perimetroTexto.textContent = "EL PERIMETRO DEL TERRENO ES DE "+ resultado.perimetro;
+    alert("INGRESE VALORES EN LOS CAMPOS DESIGNADOS")
 }
 
 

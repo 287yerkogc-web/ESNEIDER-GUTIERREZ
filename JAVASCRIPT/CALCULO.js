@@ -1,13 +1,12 @@
 console.log("Hola Mundo");
 alert("CALCULO DEL AREA Y PERIMETRO DE UN TERRENO") 
 
-document.getElementById("CalcularTerreno").addEventListener("click"), 
-function(){
+document.getElementById("CalcularTerreno").addEventListener("click", function(){
     let largo = parseFloat(document.getElementById("largo").value);
     let ancho = parseFloat(document.getElementById("ancho").value);
 
-    let areaTexto = document.getElementById("resultadoArea");
-    let perimetroTexto = document.getElementById("resultadoPerimetro");
+    let areaTexto = document.getElementById("ResultadoArea");
+    let perimetroTexto = document.getElementById("ResultadoPerimetro");
 
     if (isNaN(largo) || isNaN(ancho)){
         areaTexto.textContent= "INGRESE VALORES VALIDOS. ";
@@ -24,6 +23,6 @@ function(){
     areaTexto.textContent = "EL AREA DEL TERRENO ES DE: "+ resultado.area;
     perimetroTexto.textContent = "EL PERIMETRO DEL TERRENO ES DE "+ resultado.perimetro;
     alert("INGRESE VALORES EN LOS CAMPOS DESIGNADOS")
-}
+});
 
 

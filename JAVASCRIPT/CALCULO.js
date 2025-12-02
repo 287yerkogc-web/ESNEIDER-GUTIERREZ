@@ -9,7 +9,7 @@ document.getElementById("CalcularTerreno").addEventListener("click", function(){
     let perimetroTexto = document.getElementById("ResultadoPerimetro");
 
     if (isNaN(largo) || isNaN(ancho)){
-        alert("POR FAVOR INGRESE VALORES EN AMBOS CAMPOS PARA CALCULAR")
+        alert("POR FAVOR INGRESE VALORES EN AMBOS CAMPOS PARA CALCULAR");
         areaTexto.textContent= "INGRESE VALORES VALIDOS. ";
         perimetroTexto.textContent = "";
         return;

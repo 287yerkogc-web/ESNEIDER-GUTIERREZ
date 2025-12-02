@@ -9,6 +9,7 @@ document.getElementById("CalcularTerreno").addEventListener("click", function(){
     let perimetroTexto = document.getElementById("ResultadoPerimetro");
 
     if (isNaN(largo) || isNaN(ancho)){
+        alert("POR FAVOR INGRESE VALORES EN AMBOS CAMPOS PARA CALCULAR")
         areaTexto.textContent= "INGRESE VALORES VALIDOS. ";
         perimetroTexto.textContent = "";
         return;
@@ -22,7 +23,6 @@ document.getElementById("CalcularTerreno").addEventListener("click", function(){
 
     areaTexto.textContent = "EL AREA DEL TERRENO ES DE: "+ resultado.area;
     perimetroTexto.textContent = "EL PERIMETRO DEL TERRENO ES DE "+ resultado.perimetro;
-    alert("INGRESE VALORES EN LOS CAMPOS DESIGNADOS")
 });
 
 

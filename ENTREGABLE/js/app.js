@@ -1,8 +1,4 @@
-/* app.js - EcoMarket dynamic behavior
-   Requires: jQuery (or adapt to vanilla if you want)
-*/
 (function(){
-  // --- Datos iniciales de ejemplo (puedes sustituir por tu JSON/API) ---
   const productosData = [
     { id:1, nombre:"Manzana Orgánica", categoria:"Frutas", precio:2.50, img:"img/apple.jpg", descripcion:"Frescas y libres de pesticidas." },
     { id:2, nombre:"Zanahoria Orgánica", categoria:"Vegetales", precio:1.20, img:"img/carrots.jpg", descripcion:"Crujientes y ricas en fibra." },
@@ -10,18 +6,14 @@
     { id:4, nombre:"Leche de Granja", categoria:"Lácteos", precio:4.50, img:"img/milk.jpg", descripcion:"100% natural y fresca." },
     { id:5, nombre:"Lentejas", categoria:"Granos", precio:2.90, img:"img/lentils.jpg", descripcion:"Proteína vegetal." }
   ];
-
-  // --- Estado ---
   let carrito = JSON.parse(localStorage.getItem('ec_cart') || '[]');
 
-  // --- Utils ---
   function saveCart(){ localStorage.setItem('ec_cart', JSON.stringify(carrito)); updateCartCounter(); renderCartList(); }
   function updateCartCounter(){
     const count = carrito.reduce((s,i)=>s + i.cantidad,0);
     document.querySelectorAll('.cart-count').forEach(el=>el.textContent = count);
   }
 
-  // --- Render categorías dinámicas ---
   function renderCategories(){
     const cats = [...new Set(productosData.map(p=>p.categoria))];
     const container = document.getElementById('categoriesContainer');
@@ -41,7 +33,6 @@
     });
   }
 
-  // --- Render productos ---
   function renderProducts(list){
     const container = document.getElementById('productsGrid');
     if(!container) return;
@@ -66,19 +57,17 @@
       container.appendChild(card);
     });
 
-    // attach add-to-cart events
     container.querySelectorAll('button[data-id]').forEach(btn=>{
       btn.addEventListener('click', (e)=>{
         const id = Number(btn.getAttribute('data-id'));
         addToCart(id);
-        // feedback
+
         btn.textContent = 'Añadido ✓';
         setTimeout(()=> btn.textContent = 'Añadir', 900);
       });
     });
   }
 
-  // --- Cart functions ---
   function addToCart(productId, qty=1){
     const prod = productosData.find(p=>p.id===productId);
     if(!prod) return;
@@ -108,7 +97,6 @@
     return carrito.reduce((s,i)=>s + i.precio * i.cantidad, 0);
   }
 
-  // --- Render carrito drawer list ---
   function renderCartList(){
     const listEl = document.getElementById('cartList');
     const totalEl = document.getElementById('cartTotal');
@@ -137,7 +125,6 @@
       listEl.appendChild(item);
     });
 
-    // attach events
     listEl.querySelectorAll('.btn-decrease').forEach(b=>{
       b.addEventListener('click', ()=> changeQty(Number(b.getAttribute('data-id')), -1));
     });
@@ -151,18 +138,15 @@
     if(totalEl) totalEl.textContent = `S/. ${cartTotal().toFixed(2)}`;
   }
 
-  // --- Drawer toggle ---
   function openCart(){ document.querySelector('.cart-drawer').classList.add('open'); }
   function closeCart(){ document.querySelector('.cart-drawer').classList.remove('open'); }
 
-  // --- Initialización ---
   document.addEventListener('DOMContentLoaded', function(){
     renderCategories();
     renderProducts(productosData);
     updateCartCounter();
     renderCartList();
 
-    // open cart button
     document.querySelectorAll('.open-cart').forEach(btn=>{
       btn.addEventListener('click', openCart);
     });
@@ -170,11 +154,9 @@
       btn.addEventListener('click', closeCart);
     });
 
-    // clear cart
     const clearBtn = document.getElementById('cartClear');
     if(clearBtn) clearBtn.addEventListener('click', ()=>{ carrito = []; saveCart(); });
 
-    // search (optional)
     const searchInput = document.getElementById('searchInput');
     if(searchInput){
       searchInput.addEventListener('input', (e)=>{
@@ -184,6 +166,5 @@
     }
   });
 
-  // export for debugging
   window.EC = { productosData, carrito, addToCart, removeFromCart, changeQty };
 })();

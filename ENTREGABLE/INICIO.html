@@ -10,18 +10,25 @@
     </head>
     <body>
         <header class="navbar navbar-expand-lg navbar-light bg-success p-3">
+            <div class="container">
             <a class="navbar-brand text-white fw-bold" href="INICIO.html">EcoMarket</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link text-white" href="INICIO.html">INICIO</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="NOSOTROS.html">NOSOTROS</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="PRODUCTOS.html">PRODUCTOS</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="CONTACTO.html">CONTACTO</a></li>
-                    
+                    <li class="nav-item ms-3">
+                        <button class="btn cart-btn open-cart" type="button" aria-label="Abrir carrito">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h9v-2h-8.42c-.14 0-.25-.11-.25-.25l.03-.12L14.1 13h3.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49L21.42 4H7z"/></svg>
+                            <span class="cart-count badge cart-count">0</span>
+                        </button>
+                    </li>
                 </ul>
+            </div>
             </div>
         </header>
         <section class="hero bg-light py-5">

@@ -8,18 +8,54 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="navbar navbar-expand-lg navbar-light bg-success p-3">
-      <a class="navbar-brand text-white fw-bold" href="INICIO.html">EcoMarket</a>
+    <header class="navbar navbar-expand-lg navbar-light bg-success p-3 shadow-sm">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="INICIO.html">EcoMarket</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item"><a class="nav-link text-white" href="INICIO.html">INICIO</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="INICIO.html">NOSOTROS</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="INICIO.html">PRODUCTOS</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="INICIO.html">CONTACTOS</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <section class="container my-5">
-      <h1 class="text-success fw-bold">CONTACTO</h1>
-      <form class="mt-4">
-        <input type="text" class="form-control mb-3" placeholder="Nombre completo">
-        <input type="email" class="form-control mb-3" placeholder="Correo electrónico">
-        <textarea class="form-control mb-3" placeholder="Mensaje"></textarea>
-        <button class="btn btn-success">Enviar</button>
+    <section class="container my-5" style="max-width: 700px;">
+      <div class="card shadow-sm p-4 border-0">
+        <h3 class="text-success fw-bold mb-3 text-center">Envianos un mensaje</h3>
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" placeholder="Tu nombre" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" placeholder="correo@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-control" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="container my-5" style="max-width: 700px;">
+        <div class="card shadow-sm p-4 border-0">
+            <h3 class="text-success fw-bold mb-3 text-center">Envíanos un mensaje</h3>
 
-      </form>
+            <form>
+
+                <div class="text-center">
+                    <button class="btn btn-success px-4 py-2 fw-bold" type="submit">
+                        Enviar mensaje
+                    </button>
+                </div>
+            </form>
+        </div>
     </section>
     <footer class="bg-success text-white text-center p-3">EcoMarket © 2025 - Proyecto academico</footer>
   </body>

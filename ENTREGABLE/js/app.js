@@ -1,10 +1,10 @@
 (function () {
   const productosData = [
-    { id: 1, nombre: "Manzana Orgánica", categoria: "Frutas", precio: 2.50, img: "img/apple.jpg", descripcion: "Frescas y libres de pesticidas." },
-    { id: 2, nombre: "Zanahoria Orgánica", categoria: "Vegetales", precio: 1.20, img: "img/carrots.jpg", descripcion: "Crujientes y ricas en fibra." },
-    { id: 3, nombre: "Avena Integral", categoria: "Cereales", precio: 3.10, img: "img/oats.jpg", descripcion: "Fuente natural de energía." },
-    { id: 4, nombre: "Leche de Granja", categoria: "Lácteos", precio: 4.50, img: "img/milk.jpg", descripcion: "100% natural y fresca." },
-    { id: 5, nombre: "Lentejas", categoria: "Granos", precio: 2.90, img: "img/lentils.jpg", descripcion: "Proteína vegetal." }
+    { id: 1, nombre: "Manzana Orgánica", categoria: "Frutas", precio: 2.50, img: "images/manzana.jpg", descripcion: "Frescas y libres de pesticidas." },
+    { id: 2, nombre: "Zanahoria Orgánica", categoria: "Vegetales", precio: 1.20, img: "images/zanahoria.jpg", descripcion: "Crujientes y ricas en fibra." },
+    { id: 3, nombre: "Avena Integral", categoria: "Cereales", precio: 3.10, img: "images/avena.jpg", descripcion: "Fuente natural de energía." },
+    { id: 4, nombre: "Leche de Granja", categoria: "Lácteos", precio: 4.50, img: "images/leche.jpg", descripcion: "100% natural y fresca." },
+    { id: 5, nombre: "Lentejas", categoria: "Granos", precio: 2.90, img: "images/lenteja.jpg", descripcion: "Proteína vegetal." }
   ];
 
   let carrito = JSON.parse(localStorage.getItem("ec_cart") || "[]");

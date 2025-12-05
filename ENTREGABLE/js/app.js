@@ -144,6 +144,7 @@
   document.addEventListener('DOMContentLoaded', function(){
     renderCategories();
     renderProducts(productosData);
+    renderFeaturedProducts();
     updateCartCounter();
     renderCartList();
 
@@ -168,3 +169,31 @@
 
   window.EC = { productosData, carrito, addToCart, removeFromCart, changeQty };
 })();
+function renderFeaturedProducts() {
+  const container = document.getElementById("features-products");
+  if (!container) return;
+
+  const destacados = productosData.slice(0, 3);
+
+  container.innerHTML = destacados
+    .map(
+      (p) => `
+      <div class="col-md-4">
+        <div class="card shadow-sm product-card-highlight">
+          <img src="${p.img}" class="card-img-top" alt="${p.nombre}">
+          <div class="card-body">
+            <h5 class="product-title">${p.nombre}</h5>
+            <p class="text-muted-small">${p.descripcion}</p>
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <span class="product-price">S/. ${p.precio.toFixed(2)}</span>
+              <button class="btn btn-success btn-sm" onclick="EC.addToCart(${p.id})">
+                Añadir
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      `
+    )
+    .join("");
+}

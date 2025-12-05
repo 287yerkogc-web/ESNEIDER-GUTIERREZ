@@ -233,6 +233,37 @@ body {
   .ec-cart-backdrop.open { opacity: 1; visibility: visible; }
 }
 
-
 .ec-cart-header h5 { margin:0; color:var(--ec-text, #163523); }
 .btn-ec { background: var(--ec-green, #2f8f4a); color: #fff; border: none; }
+.product-card-highlight {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.product-card-highlight:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.product-card-highlight img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-title {
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.text-muted-small {
+  font-size: 0.9rem;
+  color: #666;
+}
+

@@ -69,6 +69,30 @@
         <footer class="bg-success text-white text-center p-3 mt-5">
             EcoMarket © 2025 - Proyecto academico
         </footer>
+        <div id="ec-cart-backdrop" class="ec-cart-backdrop" aria-hidden="true"></div>
+        <aside id="ec-cart-sidebar" class="ec-cart-sidebar" aria-hidden="true" role="dialog" aria-label="Carrito de EcoMarket">
+            <div class="ec-cart-header">
+                <div>
+                    <h5 class="mb-0">Tu Carrito</h5>
+                    <small class="text-muted">Revisa tus productos</small>
+                </div>
+                <div>
+                    <button class="btn btn-sm btn-light close-cart" aria-label="Cerrar carrito">X</button>
+                </div>
+            </div>
+            <div id="ec-cart-list" class="ec-cart-list">
+            </div>
+            <div class="ec-cart-footer">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="text-muted">Total</div>
+                    <div id="ec-cart-total" class="fw-bold">S/. 0.00</div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button id="ec-cart-clear" class="btn btn-outline-secondary">Vaciar Carrito</button>
+                    <button id="ec-cart-checkout" class="btn btn-ec">Finalizar Compra</button>
+                </div>
+            </div>
+        </aside>
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/plugins.js"></script>

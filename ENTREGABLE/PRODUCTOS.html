@@ -30,25 +30,18 @@
       <p class="lead">Explora alimentos saludables, frescos y 100% ecologicos</p>
     </section>
     <section class="container my-5">
-      <h3 class="text-success fw-bold mb-3">Categorias</h3>
-      <div class="row g-3">
-        <div class="col-md-3 col-6">
-          <button class="category-btn w-100" data-category="frutas">Frutas</button>
-        </div>
-        <div class="col-md-3 col-6">
-          <button class="category-btn w-100" data-category="vegetales">Vegetales</button>
-        </div>
-        <div class="col-md-3 col-6">
-          <button class="category-btn w-100" data-category="granos">Lacteos</button>
-        </div>
-        <div class="col-md-3 col-6">
-          <button class="category-btn w-100" data-category="bebidas">Legumbres</button>
-        </div>
+      <h3 class="text-success fw-bold">Categorias</h3>
+      <div class="row text-center">
+        <button id="btn-frutas" class="btn btn-outline-success col-2 m-2">Frutas</button>
+        <button id="btn-vegetales" class="btn btn-outline-success col-2 m-2">Vegetales</button>
+        <button id="btn-lacteos" class="btn btn-outline-success col-2 m-2">Lácteos</button>
+        <button id="btn-legumbres" class="btn btn-outline-success col-2 m-2">Legumbres</button>
+        <button id="btn-todos" class="btn btn-success col-2 m-2">Todos</button>
       </div>
     </section>
     <section class="container my-4">
       <h3 class="text-success fw-bold mb-3">Todos los Productos</h3>
-      <div class="row g-4" id="product-list"></div>
+      <div class="row g-4" id="lista-productos" class="products-grid"></div>
     </section>
     <footer class="bg-success text-white text-center p-3 mt-5">EcoMarket © 2025 - proyecto academico</footer>
     <div class="cart-drawer">

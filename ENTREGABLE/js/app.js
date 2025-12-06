@@ -160,3 +160,78 @@
   });
 
 })();
+const productos = [
+    {
+        id: 1,
+        nombre: "Manzana Orgánica",
+        precio: 2.50,
+        categoria: "Frutas",
+        descripcion: "Frescas y libres de pesticidas.",
+        imagen: "img/manzana.jpg"
+    },
+    {
+        id: 2,
+        nombre: "Zanahoria Orgánica",
+        precio: 1.20,
+        categoria: "Vegetales",
+        descripcion: "Crujientes y ricas en fibra.",
+        imagen: "img/zanahoria.jpg"
+    },
+    {
+        id: 3,
+        nombre: "Avena Integral",
+        precio: 3.10,
+        categoria: "Lacteos",
+        descripcion: "Fuente natural de energía.",
+        imagen: "img/avena.jpg"
+    },
+    {
+        id: 4,
+        nombre: "Lentejas",
+        precio: 2.80,
+        categoria: "Legumbres",
+        descripcion: "Ricas en proteínas y fibra.",
+        imagen: "img/lentejas.jpg"
+    }
+];
+function mostrarProductos(lista) {
+    const contenedor = document.getElementById("lista-productos");
+    contenedor.innerHTML = "";
+
+    lista.forEach(prod => {
+        contenedor.innerHTML += `
+            <div class="product-card">
+                <img src="${prod.imagen}" alt="${prod.nombre}">
+                <div class="product-body">
+                    <h5 class="product-title">${prod.nombre}</h5>
+                    <p class="text-muted-small">${prod.descripcion}</p>
+                    <p class="product-price">S/. ${prod.precio.toFixed(2)}</p>
+                    <button class="btn btn-success add-cart" data-id="${prod.id}">Añadir</button>
+                </div>
+            </div>
+        `;
+    });
+}
+document.getElementById("btn-frutas").addEventListener("click", () => {
+    mostrarProductos(productos.filter(p => p.categoria === "Frutas"));
+});
+
+document.getElementById("btn-vegetales").addEventListener("click", () => {
+    mostrarProductos(productos.filter(p => p.categoria === "Vegetales"));
+});
+
+document.getElementById("btn-lacteos").addEventListener("click", () => {
+    mostrarProductos(productos.filter(p => p.categoria === "Lacteos"));
+});
+
+document.getElementById("btn-legumbres").addEventListener("click", () => {
+    mostrarProductos(productos.filter(p => p.categoria === "Legumbres"));
+});
+
+document.getElementById("btn-todos").addEventListener("click", () => {
+    mostrarProductos(productos);
+});
+document.addEventListener("DOMContentLoaded", () => {
+    mostrarProductos(productos);
+});
+

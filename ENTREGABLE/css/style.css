@@ -137,6 +137,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +146,7 @@ body {
     color: #fff;
     padding: 20px;
     position: relative;
-    background: linear-gradient(180deg, rgba(47,143,74,0.06), transparent);
+    z-index: 1;
 }
 .hero-banner h1 {
   font-size: 3rem;
@@ -166,7 +167,7 @@ body {
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  z-index: 10;
+  z-index: 2;
 }
 .hero-banner .btn:hover {
   background-color: #d78e33; 
@@ -175,6 +176,7 @@ body {
 .hero-banner .container {
   max-width: 800px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .btn-ec {

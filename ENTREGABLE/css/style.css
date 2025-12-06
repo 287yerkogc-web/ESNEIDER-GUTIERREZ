@@ -191,6 +191,11 @@ body {
   transform: translateY(-6px);
   box-shadow: 0 14px 40px rgba(23,38,32,0.06);
 }
+.category-card span {
+    font-weight: 700;
+    color: var(--ec-green-dark);
+    font-size: 1rem;
+}
 
 .product-card {
   background: #fff;

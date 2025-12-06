@@ -131,6 +131,37 @@ body {
 .product-card .btn {
     align-self: flex-end;
 }
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--ec-text);
+    box-shadow: var(--card-shadow);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.category-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.category-card span {
+    font-weight: 700;
+    color: var(--ec-green-dark);
+    font-size: 1rem;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(23,38,32,0.12);
+}
 
 
 

@@ -167,7 +167,7 @@ const productos = [
         precio: 2.50,
         categoria: "Frutas",
         descripcion: "Frescas y libres de pesticidas.",
-        imagen: "img/manzana.jpg"
+        imagen: "images/manzana.jpg"
     },
     {
         id: 2,
@@ -175,7 +175,7 @@ const productos = [
         precio: 1.20,
         categoria: "Vegetales",
         descripcion: "Crujientes y ricas en fibra.",
-        imagen: "img/zanahoria.jpg"
+        imagen: "images/zanahoria.jpg"
     },
     {
         id: 3,
@@ -183,7 +183,7 @@ const productos = [
         precio: 3.10,
         categoria: "Lacteos",
         descripcion: "Fuente natural de energía.",
-        imagen: "img/avena.jpg"
+        imagen: "images/avena.jpg"
     },
     {
         id: 4,
@@ -191,7 +191,7 @@ const productos = [
         precio: 2.80,
         categoria: "Legumbres",
         descripcion: "Ricas en proteínas y fibra.",
-        imagen: "img/lentejas.jpg"
+        imagen: "images/lenteja.jpg"
     }
 ];
 function mostrarProductos(lista) {

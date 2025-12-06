@@ -196,40 +196,7 @@
   });
 
 })();
-const productos = [
-    {
-        id: 1,
-        nombre: "Manzana Orgánica",
-        precio: 2.50,
-        categoria: "Frutas",
-        descripcion: "Frescas y libres de pesticidas.",
-        imagen: "images/manzana.jpg"
-    },
-    {
-        id: 2,
-        nombre: "Zanahoria Orgánica",
-        precio: 1.20,
-        categoria: "Vegetales",
-        descripcion: "Crujientes y ricas en fibra.",
-        imagen: "images/zanahoria.jpg"
-    },
-    {
-        id: 3,
-        nombre: "Avena Integral",
-        precio: 3.10,
-        categoria: "Lacteos",
-        descripcion: "Fuente natural de energía.",
-        imagen: "images/avena.jpg"
-    },
-    {
-        id: 4,
-        nombre: "Lentejas",
-        precio: 2.80,
-        categoria: "Legumbres",
-        descripcion: "Ricas en proteínas y fibra.",
-        imagen: "images/lenteja.jpg"
-    }
-];
+
 function mostrarProductos(lista) {
     const contenedor = document.getElementById("lista-productos");
     contenedor.innerHTML = "";

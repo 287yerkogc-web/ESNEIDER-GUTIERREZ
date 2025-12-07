@@ -522,6 +522,7 @@ function mostrarProductos(lista) {
 
     lista.forEach(prod => {
         contenedor.innerHTML += `
+          <div class="col-md-4 col-6">
             <div class="product-card">
                 <img src="${prod.imagen}" alt="${prod.nombre}">
                 <div class="product-body">
@@ -531,6 +532,7 @@ function mostrarProductos(lista) {
                     <button class="btn btn-success add-cart" data-id="${prod.id}">Añadir</button>
                 </div>
             </div>
+          </div>  
         `;
     });
 }

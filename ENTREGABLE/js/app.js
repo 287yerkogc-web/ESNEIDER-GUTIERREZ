@@ -175,7 +175,12 @@
       btn.addEventListener("click", () => addToCart(Number(btn.dataset.id)));
     });
   }
-
+document.querySelectorAll(".add-cart").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const productId = Number(btn.dataset.id);
+      addToCart(productId);
+    });
+  });
   document.addEventListener("DOMContentLoaded", () => {
     renderFeaturedProducts();
     updateCartCounter();

@@ -184,7 +184,7 @@ const productos = [
     { 
         id: 3, 
         nombre: "Leche de Granja", 
-        categoria: "Lacteos", 
+        categoria: "Lácteos", 
         precio: 4.50, 
         imagen: "images/leche.jpg", 
         descripcion: "100% natural y fresca." },

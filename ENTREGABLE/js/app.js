@@ -3,7 +3,10 @@
     { id: 1, nombre: "Manzana Orgánica", categoria: "Frutas", precio: 2.50, img: "images/manzana.jpg", descripcion: "Frescas y libres de pesticidas." },
     { id: 2, nombre: "Zanahoria Orgánica", categoria: "Vegetales", precio: 1.20, img: "images/zanahoria.jpg", descripcion: "Crujientes y ricas en fibra." },
     { id: 3, nombre: "Leche de Granja", categoria: "Lácteos", precio: 4.50, img: "images/leche.jpg", descripcion: "100% natural y fresca." },
-    { id: 4, nombre: "Lentejas", categoria: "Legumbres", precio: 2.90, img: "images/lenteja.jpg", descripcion: "Proteína vegetal." }
+    { id: 5, nombre: "Lentejas", categoria: "Legumbres", precio: 2.90, img: "images/lenteja.jpg", descripcion: "Proteína vegetal." },
+    { id: 6, nombre: "Naranja Orgánica", categoria: "Frutas", precio: 1.90, img: "images/naranja.jpg", descripcion: "Refrescante y rica en proteina C.", enOferta: true},
+    { id: 7, nombre: "Soya", categoria: "Legumbres", precio: 2.00, img: "images/soya.jpg", descripcion: "Excelente fuente en proteinas.", enOferta: true},
+    { id: 8, nombre: "Brocoli Orgánico", categoria: "Vegetales", precio: 1.50, img: "images/lenteja.jpg", descripcion: "Saludable y lleno de antioxidantes.", enOferta: true}
   ];
 
   let carrito = JSON.parse(localStorage.getItem("ec_cart") || "[]");
@@ -138,6 +141,33 @@
       btn.addEventListener("click", () => addToCart(Number(btn.dataset.id)));
     });
   }
+  function renderOfferProducts() {
+  const container = document.getElementById("offer-products");
+  if (!container) return;
+
+  const ofertaProductos = productosData.filter(producto => producto.enOferta);
+
+  container.innerHTML = ofertaProductos.map(p => `
+    <div class="col-md-4">
+      <div class="card shadow-sm product-card-highlight">
+        <img src="${p.img}" class="card-img-top" alt="${p.nombre}">
+        <div class="card-body">
+          <h5 class="product-title">${p.nombre}</h5>
+          <p class="text-muted-small">${p.descripcion}</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="product-price">S/. ${p.precio.toFixed(2)}</span>
+            <button class="btn btn-success btn-sm add-cart" data-id="${p.id}">Añadir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join("");
+
+  container.querySelectorAll("button[data-id]").forEach(btn => {
+    btn.addEventListener("click", () => addToCart(Number(btn.dataset.id)));
+  });
+}
+
 document.querySelectorAll(".add-cart").forEach(btn => {
     btn.addEventListener("click", () => {
       const productId = Number(btn.dataset.id);
@@ -146,6 +176,7 @@ document.querySelectorAll(".add-cart").forEach(btn => {
   });
   document.addEventListener("DOMContentLoaded", () => {
     renderFeaturedProducts();
+    renderOfferProducts();
     updateCartCounter();
     renderCartList();
 
@@ -265,7 +296,7 @@ const productos = [
         precio: 6.00, 
         categoria: "Frutas", 
         descripcion: "Pequeñas y sabrosas.", 
-        imageb: "images/cereza.jpg" 
+        imagen: "images/cereza.jpg" 
     },
     { 
         id: 14, 

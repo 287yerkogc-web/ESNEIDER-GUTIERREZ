@@ -6,7 +6,7 @@
     { id: 5, nombre: "Lentejas", categoria: "Legumbres", precio: 2.90, img: "images/lenteja.jpg", descripcion: "Proteína vegetal." },
     { id: 6, nombre: "Naranja Orgánica", categoria: "Frutas", precio: 1.90, img: "images/naranja.jpg", descripcion: "Refrescante y rica en proteina C.", enOferta: true},
     { id: 7, nombre: "Soya", categoria: "Legumbres", precio: 2.00, img: "images/soya.jpg", descripcion: "Excelente fuente en proteinas.", enOferta: true},
-    { id: 8, nombre: "Brocoli Orgánico", categoria: "Vegetales", precio: 1.50, img: "images/lenteja.jpg", descripcion: "Saludable y lleno de antioxidantes.", enOferta: true}
+    { id: 8, nombre: "Brocoli Orgánico", categoria: "Vegetales", precio: 1.50, img: "images/brocoli.jpg", descripcion: "Saludable y lleno de antioxidantes.", enOferta: true}
   ];
 
   let carrito = JSON.parse(localStorage.getItem("ec_cart") || "[]");

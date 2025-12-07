@@ -461,3 +461,21 @@ body {
     grid-template-columns: 1fr;
   }
 }
+dl dt {
+    font-weight: bold;
+    color: var(--ec-green);
+}
+
+dl dd {
+    font-size: 1rem;
+    color: var(--ec-text);
+}
+
+a {
+    color: var(--ec-accent);
+}
+
+a:hover {
+    color: var(--ec-green-dark);
+}
+

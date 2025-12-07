@@ -209,7 +209,7 @@ const productos = [
         precio: 1.80, 
         categoria: "Frutas", 
         descripcion: "Rico en potasio y fibra.", 
-        img: "images/platano.jpg" 
+        imagen: "images/platano.jpg" 
     },
     {   
         id: 7, 
@@ -217,7 +217,7 @@ const productos = [
         precio: 2.20, 
         categoria: "Frutas", 
         descripcion: "Refrescante y rica en vitamina C.", 
-        img: "images/naranja.jpg" 
+        imagen: "images/naranja.jpg" 
     },
     { 
         id: 8, 
@@ -225,7 +225,7 @@ const productos = [
         precio: 3.50, 
         categoria: "Frutas", 
         descripcion: "Dulce y jugoso.", 
-        img: "images/mango.jpg" 
+        imagen: "images/mango.jpg" 
     },
     {   
         id: 9, 
@@ -233,7 +233,7 @@ const productos = [
         precio: 4.00, 
         categoria: "Frutas", 
         descripcion: "Fresca y deliciosa.", 
-        img: "images/fresa.jpg" 
+        imagen: "images/fresa.jpg" 
     },
     { 
         id: 10, 
@@ -241,7 +241,7 @@ const productos = [
         precio: 3.00, 
         categoria: "Frutas", 
         descripcion: "Pequeñas y dulces.", 
-        img: "images/uva.jpg" 
+        imagen: "images/uva.jpg" 
     },
     { 
         id: 11, 
@@ -249,7 +249,7 @@ const productos = [
         precio: 5.00, 
         categoria: "Frutas", 
         descripcion: "Exótico y lleno de vitamina C.", 
-        img: "images/kiwi.jpg" 
+        imagen: "images/kiwi.jpg" 
     },
     { 
         id: 12, 
@@ -257,7 +257,7 @@ const productos = [
         precio: 4.20, 
         categoria: "Frutas", 
         descripcion: "Dulce y jugoso, perfecto para el verano.", 
-        img: "images/durazno.jpg" 
+        imagen: "images/durazno.jpg" 
     },
     { 
         id: 13, 
@@ -265,7 +265,7 @@ const productos = [
         precio: 6.00, 
         categoria: "Frutas", 
         descripcion: "Pequeñas y sabrosas.", 
-        img: "images/cereza.jpg" 
+        imageb: "images/cereza.jpg" 
     },
     { 
         id: 14, 
@@ -273,7 +273,7 @@ const productos = [
         precio: 3.20, 
         categoria: "Lácteos", 
         descripcion: "Fresco y saludable.", 
-        img: "images/yogur.jpg" 
+        imagen: "images/yogur.jpg" 
     },
     { 
         id: 15, 
@@ -281,7 +281,7 @@ const productos = [
         precio: 5.00, 
         categoria: "Lácteos", 
         descripcion: "Suave y cremoso.", 
-        img: "images/queso.jpg" 
+        imagen: "images/queso.jpg" 
     },
     { 
         id: 16, 
@@ -289,7 +289,7 @@ const productos = [
         precio: 4.00, 
         categoria: "Lácteos", 
         descripcion: "Hecha de forma artesanal.", 
-        img: "images/mantequilla.jpg" 
+        imagen: "images/mantequilla.jpg" 
     },
     { 
         id: 17, 
@@ -297,7 +297,7 @@ const productos = [
         precio: 3.50, 
         categoria: "Lácteos", 
         descripcion: "Perfecta para tus postres.", 
-        img: "images/crema.jpg" 
+        imagen: "images/crema.jpg" 
     },
     { 
         id: 18, 
@@ -305,7 +305,7 @@ const productos = [
         precio: 2.80, 
         categoria: "Lácteos", 
         descripcion: "Ideal para cocinar y preparar postres.", 
-        img: "images/leche-evaporada.jpg" 
+        imagen: "images/leche-evaporada.jpg" 
     },
     { 
         id: 19, 
@@ -313,7 +313,7 @@ const productos = [
         precio: 5.50, 
         categoria: "Lácteos", 
         descripcion: "Ideal para pasteles y lasañas.", 
-        img: "images/ricotta.jpg" 
+        imagen: "images/ricotta.jpg" 
     },
     { 
         id: 20, 
@@ -321,7 +321,7 @@ const productos = [
         precio: 4.00, 
         categoria: "Lácteos", 
         descripcion: "Probiótico y saludable.", 
-        img: "images/kefir.jpg" 
+        imagen: "images/kefir.jpg" 
     },
     { 
         id: 21, 
@@ -329,7 +329,7 @@ const productos = [
         precio: 3.10, 
         categoria: "Lácteos", 
         descripcion: "Práctica y nutritiva.", 
-        img: "images/leche-polvo.jpg" 
+        imagen: "images/leche-polvo.jpg" 
     },
     {  
         id: 22, 
@@ -337,7 +337,7 @@ const productos = [
         precio: 6.00, 
         categoria: "Lácteos", 
         descripcion: "Delicioso y cremoso.", 
-        img: "images/helado.jpg" 
+        imagen: "images/helado.jpg" 
     },
     { 
         id: 23, 
@@ -345,7 +345,7 @@ const productos = [
         precio: 1.50, 
         categoria: "Vegetales", 
         descripcion: "Frescos y jugosos.", 
-        img: "images/pepino.jpg" 
+        imagen: "images/pepino.jpg" 
     },
     { 
         id: 24, 
@@ -353,7 +353,7 @@ const productos = [
         precio: 2.00, 
         categoria: "Vegetales", 
         descripcion: "Maduro y lleno de sabor.", 
-        img: "images/tomate.jpg" 
+        imagen: "images/tomate.jpg" 
     },
     { 
         id: 25, 
@@ -361,7 +361,7 @@ const productos = [
         precio: 1.00, 
         categoria: "Vegetales", 
         descripcion: "Fresca y crujiente.", 
-        img: "images/lechuga.jpg" 
+        imagen: "images/lechuga.jpg" 
     },
     { 
         id: 26, 
@@ -369,7 +369,7 @@ const productos = [
         precio: 2.50, 
         categoria: "Vegetales", 
         descripcion: "Rica en hierro y vitaminas.", 
-        img: "images/espinaca.jpg" 
+        imagen: "images/espinaca.jpg" 
     },
     { 
         id: 27, 
@@ -377,7 +377,7 @@ const productos = [
         precio: 3.00, 
         categoria: "Vegetales", 
         descripcion: "Saludable y lleno de antioxidantes.", 
-        img: "images/brocoli.jpg" 
+        imagen: "images/brocoli.jpg" 
     },
     { 
         id: 28, 
@@ -385,7 +385,7 @@ const productos = [
         precio: 1.80, 
         categoria: "Vegetales", 
         descripcion: "Fresca y de sabor intenso.", 
-        img: "images/cebolla.jpg" 
+        imagen: "images/cebolla.jpg" 
     },
     { 
         id: 29, 
@@ -393,7 +393,7 @@ const productos = [
         precio: 2.20, 
         categoria: "Vegetales", 
         descripcion: "Rica en vitaminas y minerales.", 
-        img: "images/acelga.jpg" 
+        imagen: "images/acelga.jpg" 
     },
     { 
         id: 30, 
@@ -401,7 +401,7 @@ const productos = [
         precio: 2.70, 
         categoria: "Vegetales", 
         descripcion: "Dulce y crujiente.", 
-        img: "images/pimiento.jpg" 
+        imagen: "images/pimiento.jpg" 
     },
     { 
         id: 31, 
@@ -409,7 +409,7 @@ const productos = [
         precio: 3.30, 
         categoria: "Vegetales", 
         descripcion: "Versátil y rica en fibra.", 
-        img: "images/berenjena.jpg" 
+        imagen: "images/berenjena.jpg" 
     },
     { 
         id: 32, 
@@ -417,7 +417,7 @@ const productos = [
         precio: 3.00, 
         categoria: "Legumbres", 
         descripcion: "Fuente de proteína vegetal.", 
-        img: "images/garbanzo.jpg" 
+        imagen: "images/garbanzo.jpg" 
     },
     { 
         id: 33, 
@@ -425,7 +425,7 @@ const productos = [
         precio: 2.50, 
         categoria: "Legumbres", 
         descripcion: "Ricos en hierro y fibra.", 
-        img: "images/frijoles.jpg" 
+        imagen: "images/frijoles.jpg" 
     },
     { 
         id: 34, 
@@ -433,7 +433,7 @@ const productos = [
         precio: 3.20, 
         categoria: "Legumbres", 
         descripcion: "Versátiles y llenas de nutrientes.", 
-        img: "images/alubias.jpg" 
+        imagen: "images/alubias.jpg" 
     },
     { 
         id: 35, 
@@ -441,7 +441,7 @@ const productos = [
         precio: 2.70, 
         categoria: "Legumbres", 
         descripcion: "Excelente fuente de proteína.", 
-        img: "images/soya.jpg" 
+        imagen: "images/soya.jpg" 
     },
     { 
         id: 36, 
@@ -449,7 +449,7 @@ const productos = [
         precio: 2.40, 
         categoria: "Legumbres", 
         descripcion: "Frescas y deliciosas.", 
-        img: "images/arvejas.jpg" 
+        imagen: "images/arvejas.jpg" 
     },
     { 
         id: 37, 
@@ -457,7 +457,7 @@ const productos = [
         precio: 3.10, 
         categoria: "Legumbres", 
         descripcion: "Perfectas para ensaladas.", 
-        img: "images/judias-verdes.jpg" 
+        imagen: "images/judias-verdes.jpg" 
     },
     {  
         id: 38, 
@@ -465,7 +465,7 @@ const productos = [
         precio: 2.90, 
         categoria: "Legumbres", 
         descripcion: "Ricos en fibra y sabor.", 
-        img: "images/frijoles-blancos.jpg" 
+        imagen: "images/frijoles-blancos.jpg" 
     },
     { 
         id: 39, 
@@ -473,7 +473,7 @@ const productos = [
         precio: 3.00, 
         categoria: "Legumbres", 
         descripcion: "Típicas de la región.", 
-        img: "images/pochas.jpg" 
+        imagen: "images/pochas.jpg" 
     },
     { 
         id: 40, 
@@ -481,7 +481,7 @@ const productos = [
         precio: 3.40, 
         categoria: "Legumbres", 
         descripcion: "Fáciles de cocinar y sabrosas.", 
-        img: "images/lentejas-rojas.jpg" 
+        imagen: "images/lentejas-rojas.jpg"
     }
 ];
 function mostrarProductos(lista) {
